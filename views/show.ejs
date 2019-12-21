@@ -6,15 +6,15 @@
     <div class="ui top attach">
         <div class="item">
             <img class="ui centered rounded image" src="<%=blog.image%>" alt="">
-            <div class="content">
+            <div class="content" style="margin-top: 20px;">
                 <span><%=blog.created.toDateString()%></span>
             </div>
-            <div class="description">
+            <div class="description" style="margin-top: 15px;">
                 <p><%-blog.body%></p>
             </div>
-            <a class="ui green big basic button" href="/blogs/<%=blog._id%>/edit">Edit</a>
+            <a class="ui green big basic button" href="/blogs/<%=blog._id%>/edit" style="margin-top: 20px;">Edit</a>
             <form id="delete" action="/blogs/<%=blog._id%>?_method=DELETE" method="post">
-                <button class="ui red big basic button">Delete</button>
+                <button class="ui red big basic button" style="margin-top: 20px; float: right">Delete</button>
             </form>
         </div>
     </div>
