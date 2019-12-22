@@ -24,12 +24,6 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("Blog", blogSchema);
 
-// Blog.create({
-//     title:"New First Blog Post",
-//     image:"https://cdn.pixabay.com/photo/2019/12/17/14/08/landscape-4701724_1280.jpg",
-//     body:"This is the body of the first blog app"
-// });
-
 // Restful Routes
 app.get("/", function (req, res){
     res.redirect("/blogs")
@@ -102,9 +96,6 @@ app.delete("/blogs/:id",function (req,res) {
         }
     });
 });
-
-
-
 
 
 app.listen(3000, function () {
