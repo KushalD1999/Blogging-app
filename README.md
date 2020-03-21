@@ -1,1 +1,1 @@
-# blogging-app-NodeJS
+# Blogging App(Node.JS/Express.JS)
